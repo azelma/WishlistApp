@@ -1,0 +1,28 @@
+<h2><%= @wishlist.name %></h2>
+<%= link_to 'Add contributors/commenters', new_wishlist_membership_path(@wishlist.id), class: 'pull-right btn btn-success buttons' %>
+<h3>Contributors</h3>
+<% if @contributors.empty? %>
+	<p>None.</p>
+<% else %>
+	<% @contributors.each do |contributor| %>
+		<p>
+			<%= contributor.name %>
+			<% if contributor.id != session[:user_id] and @is_contributor %>
+				<%= button_to "Delete", wishlist_membership_path(@wishlist.id, @contributor.id), method: 'delete', class: 'pull-right btn btn-danger buttons' %>
+			<% end %>
+		</p>
+	<% end %>
+<% end %>
+<h3>Commenters</h3>
+<% if @commenters.empty? %>
+	<p>None.</p>
+<% else %>
+	<% @commenters.each do |commenter| %>
+		<div>
+			<div class='btn-group'>
+				<%= button_to "Delete", wishlist_membership_path(@wishlist.id, commenter.id), method: 'delete', class: 'pull-right btn btn-xs btn-danger buttons' %>
+			</div>
+			<%= commenter.name %>
+		</div>
+	<% end %>
+<% end %>

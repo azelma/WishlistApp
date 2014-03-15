@@ -1,0 +1,17 @@
+<h1>Wishlists</h1>
+<h3>My Wishlists</h3>
+<% if @contributing_lists.empty? %>
+	<p>None.</p>
+<% else %>
+	<% @contributing_lists.each do |wishlist| %>
+		<h4><%= link_to wishlist.name, wishlist_path(wishlist.id) %></h4>
+	<% end %>
+<% end %>
+<h3>Lists I Can Comment On</h3>
+<% if @commenting_lists.empty? %>
+	<p>None.</p>
+<% else %>
+	<% @commenting_lists.each do |wishlist| %>
+		<h4><%= link_to wishlist.name, wishlist_path(wishlist.id) %></h4>
+	<% end %>
+<% end %>

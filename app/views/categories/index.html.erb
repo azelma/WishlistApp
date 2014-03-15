@@ -1,0 +1,7 @@
+<h1>Categories</h1>
+<% @categories.each do |category| %>
+	<h3><%= link_to category.name, category_path(category.id) %></h3>
+	<% @items = category.items.limit(4) %>
+	<% @type = 'main' %>
+	<%= render 'items/display' %>
+<% end %>

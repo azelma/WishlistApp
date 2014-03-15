@@ -1,0 +1,10 @@
+<h2><%= @category.name %></h2>
+<p>
+	<% if session[:user_id] %>
+		<%= button_to 'Delete', category_path(@category.id), method: 'delete', class: 'pull-right btn btn-danger buttons' %>
+		<%= link_to 'Edit', edit_category_path(@category.id), class: 'pull-right btn btn-warning buttons'%>
+	<% end %>
+</p>
+<h3>Items</h3>
+<% @type = 'main' %>
+<%= render 'items/display' %>

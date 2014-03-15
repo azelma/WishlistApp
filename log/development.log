@@ -1,0 +1,1620 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mMerchant Load (0.6ms)[0m  SELECT "merchants".* FROM "merchants"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mItem Load (1.1ms)[0m  SELECT "items".* FROM "items" WHERE (merchant_id = 23)
+  [1m[36m (0.6ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 103[0m
+  [1m[35mSQL (3.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 103]]
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 104[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 104]]
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 106[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 106]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 107[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 107]]
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 108[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 108]]
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 110[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 110]]
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 111[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 111]]
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 112[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 112]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 113[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 113]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 115[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 115]]
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 116[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 116]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 117[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 117]]
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 118[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 118]]
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 119[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 119]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 120[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 120]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 121[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 121]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 122[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 122]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 124[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 124]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 70[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 70]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 71[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 71]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 73[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 73]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 74[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 74]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 75[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 75]]
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 76[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 76]]
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "merchants" WHERE "merchants"."id" = $1[0m  [["id", 23]]
+  [1m[35m (29.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items" WHERE (merchant_id = 24)
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 78[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 78]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 77[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 77]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 79[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 79]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 80[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 80]]
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 81[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 81]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "merchants" WHERE "merchants"."id" = $1[0m  [["id", 24]]
+  [1m[35m (12.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items" WHERE (merchant_id = 25)
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 85[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 85]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "merchants" WHERE "merchants"."id" = $1[0m  [["id", 25]]
+  [1m[35m (4.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mItem Load (0.8ms)[0m  SELECT "items".* FROM "items" WHERE (merchant_id = 26)
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 123[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 123]]
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 89[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 89]]
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 90[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 90]]
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 91[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 91]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "merchants" WHERE "merchants"."id" = $1[0m  [["id", 26]]
+  [1m[35m (10.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mItem Load (0.7ms)[0m  SELECT "items".* FROM "items" WHERE (merchant_id = 27)
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 92[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 92]]
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 93[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 93]]
+  [1m[36m (0.5ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 94[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 94]]
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "merchants" WHERE "merchants"."id" = $1[0m  [["id", 27]]
+  [1m[35m (12.2ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mItem Load (0.9ms)[0m  SELECT "items".* FROM "items" WHERE (merchant_id = 28)
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 97[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 97]]
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 95[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 95]]
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 96[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 96]]
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "merchants" WHERE "merchants"."id" = $1[0m  [["id", 28]]
+  [1m[35m (10.8ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mItem Load (0.9ms)[0m  SELECT "items".* FROM "items" WHERE (merchant_id = 29)
+  [1m[36m (0.5ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 98[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 98]]
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 99[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 99]]
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 100[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 100]]
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 101[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 101]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "merchants" WHERE "merchants"."id" = $1[0m  [["id", 29]]
+  [1m[35m (8.8ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mItem Load (0.8ms)[0m  SELECT "items".* FROM "items" WHERE (merchant_id = 30)
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 109[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 109]]
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 102[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 102]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "merchants" WHERE "merchants"."id" = $1[0m  [["id", 30]]
+  [1m[35m (13.1ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" WHERE (merchant_id = 31)
+  [1m[36m (0.5ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 86[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 86]]
+  [1m[36m (0.5ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 87[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 87]]
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 88[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 88]]
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "merchants" WHERE "merchants"."id" = $1[0m  [["id", 31]]
+  [1m[35m (10.1ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mItem Load (0.8ms)[0m  SELECT "items".* FROM "items" WHERE (merchant_id = 32)
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 82[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 82]]
+  [1m[36m (0.5ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 83[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 83]]
+  [1m[36m (0.6ms)[0m  [1mDELETE FROM "items_wishlists" WHERE "items_wishlists"."item_id" = 84[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = $1  [["id", 84]]
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "merchants" WHERE "merchants"."id" = $1[0m  [["id", 32]]
+  [1m[35m (10.1ms)[0m  COMMIT
+  [1m[36mCategory Load (1.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCategory Load (1.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 31
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 31]]
+  [1m[35m (7.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 32[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "categories" WHERE "categories"."id" = $1  [["id", 32]]
+  [1m[36m (5.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 33
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 33]]
+  [1m[35m (4.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 34[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "categories" WHERE "categories"."id" = $1  [["id", 34]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 35
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 35]]
+  [1m[35m (4.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 36[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "categories" WHERE "categories"."id" = $1  [["id", 36]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 37
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 37]]
+  [1m[35m (6.1ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 38[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "categories" WHERE "categories"."id" = $1  [["id", 38]]
+  [1m[36m (17.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 39
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 39]]
+  [1m[35m (4.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCategory Load (0.9ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 40[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "categories" WHERE "categories"."id" = $1  [["id", 40]]
+  [1m[36m (4.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 41
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 41]]
+  [1m[35m (7.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 42[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "categories" WHERE "categories"."id" = $1  [["id", 42]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 43
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 43]]
+  [1m[35m (8.1ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mCategory Load (0.9ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Other' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "items" SET "category_id" = 45 WHERE "items"."category_id" = 45[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "categories" WHERE "categories"."id" = $1  [["id", 45]]
+  [1m[36m (11.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mItem Load (0.9ms)[0m  SELECT "items".* FROM "items"
+  [1m[36mComment Load (1.1ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35mWishlist Load (0.8ms)[0m  SELECT "wishlists".* FROM "wishlists"
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mMembership Load (0.9ms)[0m  SELECT "memberships".* FROM "memberships" WHERE (wishlist_id = 5)
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "memberships" WHERE "memberships"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.6ms)[0m  DELETE FROM "items_wishlists" WHERE "items_wishlists"."wishlist_id" = 5
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 5]]
+  [1m[35m (8.4ms)[0m  COMMIT
+  [1m[36mMembership Load (0.6ms)[0m  [1mSELECT "memberships".* FROM "memberships"[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mMembership Load (0.6ms)[0m  SELECT "memberships".* FROM "memberships" WHERE (user_id = 3)
+  [1m[36mSQL (0.9ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (3.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE "merchants"."name" = 'Amazon' LIMIT 1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "merchants" ("created_at", "name", "site", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Amazon"], ["site", "http://amazon.com"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (12.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE "merchants"."name" = 'ModCloth' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "merchants" ("created_at", "name", "site", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "ModCloth"], ["site", "http://modcloth.com"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (6.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE "merchants"."name" = 'Express' LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "merchants" ("created_at", "name", "site", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Express"], ["site", "http://express.com"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE "merchants"."name" = 'McSweeney''s' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "merchants" ("created_at", "name", "site", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "McSweeney's"], ["site", "https://store.mcsweeneys.net/"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE "merchants"."name" = 'Lush' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "merchants" ("created_at", "name", "site", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Lush"], ["site", "http://lushusa.com"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (5.0ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE "merchants"."name" = 'Etsy' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "merchants" ("created_at", "name", "site", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Etsy"], ["site", "http://etsy.com"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (4.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE "merchants"."name" = 'ThinkGeek' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "merchants" ("created_at", "name", "site", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "ThinkGeek"], ["site", "http://thinkgeek.com"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE "merchants"."name" = 'Woot' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "merchants" ("created_at", "name", "site", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Woot"], ["site", "http://woot.com"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (4.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE "merchants"."name" = 'NewEgg' LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "merchants" ("created_at", "name", "site", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "NewEgg"], ["site", "http://newegg.com"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mMerchant Exists (0.5ms)[0m  SELECT 1 AS one FROM "merchants" WHERE "merchants"."name" = 'Out of Print Clothing' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "merchants" ("created_at", "name", "site", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Out of Print Clothing"], ["site", "http://outofprintclothing.com/"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (5.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Electronics"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "DVDs"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (7.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Books"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Clothing"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (7.0ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Cosmetics"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Jewelry"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (6.1ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Food"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Housewares"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (6.2ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Video Games"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Toys"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (6.0ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Shoes"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[36m (7.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Decor"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (6.1ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Office Supplies"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[36m (7.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Accessories"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[35m (5.0ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["name", "Other"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (1.0ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Amazon' LIMIT 1
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Electronics' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (1.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 33]]
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Amazon' AND "merchants"."id" != 33) LIMIT 1
+  [1m[36mCategory Load (0.9ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 46]]
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 46], ["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["description", "Stream online video, music to your TV using your smartphone, tablet, or laptop; Available for Windows computers running Windows 7 or higher."], ["image_url", "http://ecx.images-amazon.com/images/I/811nvG%2BLgML._SL1500_.jpg"], ["link", "http://www.amazon.com/Google-Chromecast-Streaming-Media-Player/dp/B00DR0PDNE"], ["merchant_id", 33], ["price", 35.0], ["title", "Chromecast"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[36m (12.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.7ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Amazon' LIMIT 1
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Video Games' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.6ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 33]]
+  [1m[35mMerchant Exists (0.8ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Amazon' AND "merchants"."id" != 33) LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 54]]
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 54], ["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["description", "Not everyone is innocent until proven guilty! Players star as a defense attorney, who must prove his seemingly guilty client's innocence no matter how dire the circumstances may seem. The game presents twisting storylines and intriguing gameplay in a comical anime style. Players must collect evidence, weed through inconsistent testimonies, and overcome corrupt agendas to ensure that justice prevails."], ["image_url", "http://ecx.images-amazon.com/images/I/61D1Q6W2G9L._SX385_.jpg"], ["link", "http://www.amazon.com/Phoenix-Wright-Ace-Attorney-Nintendo-DS/dp/B000B69E96"], ["merchant_id", 33], ["price", 25.99], ["title", "Phoenix Wright: Ace Attorney"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[36m (5.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.9ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Amazon' LIMIT 1
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'DVDs' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.6ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 33]]
+  [1m[35mMerchant Exists (0.8ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Amazon' AND "merchants"."id" != 33) LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 47]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 47], ["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["description", "Starring multiplatinum artist Josh Groban, Tony-winning Idina Menzel (Wicked) and Tony nominated Adam Pascal (RENT), Chess In Concert revives the eclectic yet wonderfully pop 1984 concept album featuring the music of ABBA's Björn Ulvaeus and Benny Andersson and lyrics of Tim Rice (Jesus Christ Superstar, The Lion King, Evita). Recorded at London's Royal Albert Hall in May 2008, this spectacular Chess In Concert - introduced by Rice and with the 50- piece City of London Philharmonic and 100-voice West End Chorus - finally fulfills the promise of the popular cult musical."], ["image_url", "http://ecx.images-amazon.com/images/I/41GsaEvM0OL._SY300_.jpg"], ["link", "http://www.amazon.com/dp/B0028SVXVM"], ["merchant_id", 33], ["price", 14.98], ["title", "Chess in Concert"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[36m (3.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.9ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Amazon' LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'DVDs' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.6ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 33]]
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Amazon' AND "merchants"."id" != 33) LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 47]]
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 47], ["created_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00], ["description", "Neil Patrick Harris (How I Met Your Mother) stars as Billy, A.K.A. Dr. Horrible, a budding super-villain whose plans for world domination continually go awry.  His two goals: getting accepted into the Evil League of Evil, and working up the guts to speak to his laundromat crush Penny, played by Felicia Day (The Guild).   The only thing standing in his way is Captain Hammer, Billy's superhero arch-nemesis played by Nathan Fillion (Firefly).  With one big score, Billy could get into the E.L.E. and earn the respect of Penny, but only if he can keep her away from the dashing Captain Hammer..."], ["image_url", "http://ecx.images-amazon.com/images/I/512IePeoDvL._SY300_.jpg"], ["link", "http://www.amazon.com/dp/B001M5UDGS"], ["merchant_id", 33], ["price", 5.0], ["title", "Dr. Horrible's Sing-Along Blog"], ["updated_at", Sat, 15 Mar 2014 05:07:31 UTC +00:00]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.9ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Amazon' LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Books' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.5ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 33]]
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Amazon' AND "merchants"."id" != 33) LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 48]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 48], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "Gr 9 Up-In the dystopian Chicago setting of Roth's novel (Katherine Tegen Bks., 2011), the population is divided into five factions. Upon declaring allegiance to one of them, 16-year-old Beatrice will decide her future. Beatrice and her brother, Caleb, grew up in helpful, unassuming Abnegation, always putting others first. During her aptitude testing, a simulation probes her suitability for Abnegation, Amity, Candor, Dauntless, and Erudite. Rather than getting a clear reading of her strengths, Beatrice's result is disturbing and dangerous: she is Divergent."], ["image_url", "http://ecx.images-amazon.com/images/I/41vx3ZStnuL._BO2,204,203,200_PIsitb-sticker-v3-big,TopRight,0,-55_SX278_SY278_PIkin4,BottomRight,1,22_AA300_SH20_OU01_.jpg"], ["link", "http://www.amazon.com/Divergent-Veronica-Roth-ebook/dp/B004CFA9RS"], ["merchant_id", 33], ["price", 4.99], ["title", "Divergent (Divergent Series)"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.8ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Amazon' LIMIT 1
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Books' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.5ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 33]]
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Amazon' AND "merchants"."id" != 33) LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 48]]
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 48], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel’s story is about to be completely rewritten."], ["image_url", "http://ecx.images-amazon.com/images/I/51e1dY1RXCL._BO2,204,203,200_PIsitb-sticker-v3-big,TopRight,0,-55_SX278_SY278_PIkin4,BottomRight,1,22_AA300_SH20_OU01_.jpg"], ["link", "http://www.amazon.com/The-Fault-Stars-John-Green-ebook/dp/B005ZOBNOI"], ["merchant_id", 33], ["price", 7.99], ["title", "The Fault in Our Stars"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.9ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Amazon' LIMIT 1
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Video Games' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.6ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 33]]
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Amazon' AND "merchants"."id" != 33) LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 54]]
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 54], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "Skyrim reimagines the open-world fantasy epic, pushing the game play and technology of a virtual world to new heights"], ["image_url", "http://ecx.images-amazon.com/images/I/91EWvx3TB4L._SL1500_.jpg"], ["link", "http://www.amazon.com/Elder-Scrolls-V-Skyrim-Xbox-360/dp/B004HYK956"], ["merchant_id", 33], ["price", 19.96], ["title", "Elder Scrolls V: Skyrim"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (1.0ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'ModCloth' LIMIT 1
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Decor' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.5ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 34]]
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'ModCloth' AND "merchants"."id" != 34) LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 57]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 57], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "Today is going to be the day your home decor goes from awesome to wildly wonderful! Hang this white walrus head in your den, dining room, or dorm to instantly add a kick of quirk to your personal oasis."], ["image_url", "http://productshots3.modcloth.net/productshots/0139/6685/6d89c09ded4ad5b26342ba7bccf49922.jpg?1393528137"], ["link", "http://www.modcloth.com/shop/wall-decor/you-re-my-wonder-walrus-wall-decor"], ["merchant_id", 34], ["price", 79.99], ["title", "You're My Wonder Walrus Wall Decor"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (4.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.8ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'ModCloth' LIMIT 1
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Accessories' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (1.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 34]]
+  [1m[35mMerchant Exists (0.8ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'ModCloth' AND "merchants"."id" != 34) LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 59]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 59], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "Your weekly coffee date with your BFF is the favorite thing on your social calendar! To keep yourself cozy and comfortable in the coffee shop, you’ve wrapped this polka-dotted scarf around your neck and shoulders. A sheer minty green swathe with grape-hues spots, this scarf makes you feel like an old-school movie star, especially with your classic combination of a crisp Oxford top, skinnies, and patent pumps!"], ["image_url", "http://productshots0.modcloth.net/productshots/0138/5873/400555439adb8539986c9116dc101d18.jpg?1391553086"], ["link", "http://www.modcloth.com/shop/scarves/dots-to-discuss-scarf-in-mint"], ["merchant_id", 34], ["price", 24.99], ["title", "Dots to Discuss Scarf in Mint"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (4.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.9ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'ModCloth' LIMIT 1
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Shoes' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.6ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 34]]
+  [1m[35mMerchant Exists (0.4ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'ModCloth' AND "merchants"."id" != 34) LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 56]]
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 56], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "If you would describe your style as slightly zany, decently adorable, and super-duper fun, then we’ve got ‘mews’ for you. Gather around to catch a glimpse at these white-dotted, red flats, featuring a wide-eyed and wiry-tailed black cat to tiptoe along everywhere you tread. You already have the perfect outfit on - a simple A-line with a plaid hair bow and a graphic tote - so it’s no surprise that you’re finding yourself ‘kneading’ these vegan faux-leather shoes to top off your stylish look!"], ["image_url", "http://productshots3.modcloth.net/productshots/0139/8903/ba0c8895244bc12bde18f88cdea6a33e.jpg?1393971690"], ["link", "http://www.modcloth.com/shop/shoes-flats/up-your-alley-cat-flat-in-dots"], ["merchant_id", 34], ["price", 59.99], ["title", "Up Your Alley Cat Flat in Dots"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.5ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'ModCloth' LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Clothing' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.2ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 34]]
+  [1m[35mMerchant Exists (0.3ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'ModCloth' AND "merchants"."id" != 34) LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 49]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 49], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "Who wouldn't want to croon a ballad when they see you in this sultry frock, found exclusively at ModCloth? Charmingly crimson, with a flexible material that caresses your curves, this dress with a crossover sweetheart neckline and gentle pleats at the bust is made to impress. Add seamed stockings, sturdy T-straps, and a pearl necklace before stepping into your favorite jazz club for a martini and dulcet serenade!"], ["image_url", "http://productshots1.modcloth.net/productshots/0136/3347/abeac4533ce7f470b4f8de6472d7ea99.jpg?1385139839"], ["link", "http://www.modcloth.com/shop/dresses/lady-love-song-dress-in-ruby"], ["merchant_id", 34], ["price", 79.99], ["title", "Lady Love Song Dress in Ruby"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (11.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.5ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'ModCloth' LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Clothing' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 34]]
+  [1m[35mMerchant Exists (0.5ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'ModCloth' AND "merchants"."id" != 34) LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 49]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 49], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "Welcoming your entire family into your home for a weekend is tons of fun, but it’s a lot of work, too! Celebrate the occasion with the festive beige polka-dots on this burgundy top, while keeping your cool in its light material and roll-to-button sleeves. A curved hemline vents your outfit while you run around with the little ones, and a chest pocket next to a half-placket is the perfect spot to place the five dollars your grandfather has given you on every visit since you were small. With simple jeans that are cuffed at the ankles and navy-blue flats, this top helps to make your job easy!"], ["image_url", "http://productshots2.modcloth.net/productshots/0118/5072/91efbcb5029ba367ee59d39308c45f5f.jpg?1345834486"], ["link", "http://www.modcloth.com/shop/blouses/hosting-for-the-weekend-tunic-in-merlot"], ["merchant_id", 34], ["price", 37.99], ["title", "Hosting for the Weekend Tunic in Merlot"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.4ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Out of Print Clothing' LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Clothing' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 42]]
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Out of Print Clothing' AND "merchants"."id" != 42) LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 49]]
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 49], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "Jane Austen's classic novel of love, reputation and class struggle remains as popular with readers today as it was when it was first published in 1813. 100% cotton v-neck tee, Distressed, softened print, Slim fit; runs a size small, Color: purple. Purchase of this shirt sends one book to a community in need"], ["image_url", "http://cdn3.volusion.com/cmkqa.tasqc/v/vspfiles/photos/L-1064-3.jpg?1378730085"], ["link", "http://shop.outofprintclothing.com/Pride_and_Prejudice_book_cover_t_shirt_p/l-1064.htm"], ["merchant_id", 42], ["price", 28.0], ["title", "Pride and Prejudice"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (7.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.5ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Out of Print Clothing' LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Clothing' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.3ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 42]]
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Out of Print Clothing' AND "merchants"."id" != 42) LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 49]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 49], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "Purchase of this fleece sends one book to a community in need"], ["image_url", "http://cdn3.volusion.com/cmkqa.tasqc/v/vspfiles/photos/U-1007-4.jpg?1384255837"], ["link", "http://shop.outofprintclothing.com/1984_book_cover_fleece_p/u-1007.htm"], ["merchant_id", 42], ["price", 42.0], ["title", "1984"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (8.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.7ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Out of Print Clothing' LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Accessories' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 42]]
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Out of Print Clothing' AND "merchants"."id" != 42) LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 59]]
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 59], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "Canvas book bags with your favorite classic book art. An Out of Print adaptation of Laurent de Brunhoff's original illustrations."], ["image_url", "http://cdn3.volusion.com/cmkqa.tasqc/v/vspfiles/photos/TOTE-1013-3T.jpg?1389100469"], ["link", "http://shop.outofprintclothing.com/Babars_Yoga_for_Elephants_tote_bag_p/tote-1013.htm"], ["merchant_id", 42], ["price", 18.0], ["title", "Barbar's Yoga for Elephants"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (6.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.8ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Express' LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Clothing' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.5ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 35]]
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Express' AND "merchants"."id" != 35) LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 49]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 49], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "We love the slip-on-and-go ease of a romper. Designed for mini dress sexiness with the comfort of a short, this lace-trimmed style can transition from a casual day to a hot night with a simple switch of accessories."], ["image_url", "http://images.express.com/is/image/expressfashion/74_792_2925_058"], ["link", "http://www.express.com/clothing/lace+trimmed+woven+romper/pro/7922925/cat1330001?isSessionExpired=true&cid=3158&_requestid=4633779"], ["merchant_id", 35], ["price", 59.9], ["title", "Lace Trimmed Woven Romper"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.8ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'NewEgg' LIMIT 1
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Electronics' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.5ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 41]]
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'NewEgg' AND "merchants"."id" != 41) LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 46]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 46], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "24.2MP DX-Format CMOS Sensor, EXPEED III Image Processor, 921K-Dot LCD, AF-S DX NIKKOR 18-55mm 3.5-5.6G VR Lens, 11-Point Autofocus, HD 1080p Video, Live View, Up To ISO 12800"], ["image_url", "http://images17.newegg.com/is/image/newegg/30-113-400-TS?$S300$"], ["link", "http://www.newegg.com/Product/Product.aspx?Item=9SIA1J20NT5912"], ["merchant_id", 41], ["price", 499.95], ["title", "Nikon D3200 Black 24.2 MP CMOS Digital SLR Camera with 18-55mm Lens & Wi-Fi Connectivity"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (648.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.6ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'NewEgg' LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Electronics' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 41]]
+  [1m[35mMerchant Exists (0.4ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'NewEgg' AND "merchants"."id" != 41) LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 46]]
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 46], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "iOS 6, 1 GHz Apple Dual-core A5, LA Version, 5 Megapixel iSight camera (1280p HD video recording), Front end FaceTime HD Camera (720p HD video recording), 7.9 LED-backlit Multi Touch display with IP"], ["image_url", "http://images10.newegg.com/ProductImageCompressAll300/58-753-174-02.jpg"], ["link", "http://www.newegg.com/Product/Product.aspx?Item=N82E16858753174"], ["merchant_id", 41], ["price", 299.99], ["title", "Apple iPad Mini (16 GB) with Wi-Fi – White & Silver – Model #MD531E/A"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (8.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.6ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'NewEgg' LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Electronics' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.2ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 41]]
+  [1m[35mMerchant Exists (0.3ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'NewEgg' AND "merchants"."id" != 41) LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 46]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 46], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "Intel Core i5 3337U (1.80GHz) 4GB Memory 128GB SSD Intel HD Graphics 4000 1920 x 1080 Windows 8 Pro 64-bit"], ["image_url", "http://images10.newegg.com/ProductImageCompressAll300/0EJ-001J-00004-01.jpg"], ["link", "http://www.newegg.com/Product/Product.aspx?Item=9SIA24G15M2076"], ["merchant_id", 41], ["price", 1249.88], ["title", "Lenovo ThinkPad Helix 36986EU Ultrabook/Tablet - 11.6in - Intel Core i5 i5-3337U 1.80 GHz - Black"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (10.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.5ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'McSweeney''s' LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Books' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 36]]
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'McSweeney''s' AND "merchants"."id" != 36) LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 48]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 48], ["created_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00], ["description", "This is The Portlandia Activity Book—a compendium of guaranteed enrichment for the Pacific Northwestern part of your psyche. Like a cool high school that prefers a sweat lodge to the traditional classroom, this book will expand your mind through participation, dehydrate you to a state of emotional rawness, then linger in the corners your bare soul."], ["image_url", "https://ddkpmexz7bq23.cloudfront.net/images/production/1667/2014-01-08%2013:33:25%20-0800/product/portlandia_cover_FINAL_STORE.jpg?1389216805"], ["link", "https://store.mcsweeneys.net/products/the-portlandia-activity-book"], ["merchant_id", 36], ["price", 23.0], ["title", "The Portlandia Activity Book"], ["updated_at", Sat, 15 Mar 2014 05:07:32 UTC +00:00]]
+  [1m[36m (8.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (1.0ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'McSweeney''s' LIMIT 1
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Books' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.5ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 36]]
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'McSweeney''s' AND "merchants"."id" != 36) LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 48]]
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 48], ["created_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00], ["description", "In late 2003, as the first issue of the Believer magazine was rising from the primordial ooze, Nick Hornby turned in the inaugural installment of a monthly column that immediately became a reader favorite."], ["image_url", "https://ddkpmexz7bq23.cloudfront.net/images/production/1586/2013-11-05%2016:51:06%20-0800/product/thetub_jacket_FINAL_PR.jpg?1383699066"], ["link", "https://store.mcsweeneys.net/products/ten-years-in-the-tub"], ["merchant_id", 36], ["price", 26.0], ["title", "Ten Years in the Tub"], ["updated_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.9ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'McSweeney''s' LIMIT 1
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Books' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.7ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 36]]
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'McSweeney''s' AND "merchants"."id" != 36) LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 48]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 48], ["created_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00], ["description", "In the gripping first-person accounts of High Rise Stories, former residents of Chicago’s iconic public housing projects describe life in the now-demolished high-rises. These stories of community, displacement, and poverty in the wake of gentrification give voice to those who have long been ignored, but whose hopes and struggles exist firmly at the heart of our national identity."], ["image_url", "https://ddkpmexz7bq23.cloudfront.net/images/production/1464/2013-08-05%2009:35:08%20-0700/large/hrs_cover_FINAL.jpg?1375720508"], ["link", "https://store.mcsweeneys.net/products/high-rise-stories-voices-from-chicago-public-housing"], ["merchant_id", 36], ["price", 13.0], ["title", "High Rise Stories: Voices from Chicago Public Housing"], ["updated_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00]]
+  [1m[36m (5.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.7ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Lush' LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Cosmetics' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.5ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 37]]
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Lush' AND "merchants"."id" != 37) LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 50]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 50], ["created_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00], ["description", "This Bath Bomb is a tribute to our belief that great things can rise out of the ashes, just like the mythical Phoenix. Royal purple and gold-dusted, with a cinnamon stick in the center, this gorgeous bomb sinks to the bottom of the tub when you toss it in, and slowly rises up, fizzing out a spicy apple and cinnamon scent."], ["image_url", "http://demandware.edgesuite.net/sits_pod18/dw/image/v2/AAHL_PRD/on/demandware.static/Sites-Lush-Site/Sites-lushcosmetics-export/en_US/v1394236818157/images/product/03575.jpg?sw=600"], ["link", "http://www.lushusa.com/Phoenix-Rising/03575,en_US,pd.html"], ["merchant_id", 37], ["price", 6.95], ["title", "Phoenix Rising"], ["updated_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00]]
+  [1m[36m (8.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.7ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Lush' LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Cosmetics' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.3ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 37]]
+  [1m[35mMerchant Exists (0.4ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Lush' AND "merchants"."id" != 37) LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 50]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 50], ["created_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00], ["description", "Fine, thin hair? Don't despair! We've got a hair and scalp treatment just for you. You'll feel the tingling and cooling sensations of fresh mint infusion and minty oils (peppermint and spearmint) as they go to work revitalizing the scalp, because healthy hair starts at the roots! Extra virgin olive oil and honey soften and condition hair to make it shine without weighing it down. Give dull, fine and thin hair volume and shine by treating it with Roots."], ["image_url", "http://demandware.edgesuite.net/sits_pod18/dw/image/v2/AAHL_PRD/on/demandware.static/Sites-Lush-Site/Sites-lushcosmetics-export/en_US/v1394236818157/images/product/03741.jpg?sw=300"], ["link", "http://www.lushusa.com/Roots/03741,en_US,pd.html"], ["merchant_id", 37], ["price", 19.95], ["title", "Roots"], ["updated_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00]]
+  [1m[36m (11.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.5ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Lush' LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Cosmetics' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 37]]
+  [1m[35mMerchant Exists (0.4ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Lush' AND "merchants"."id" != 37) LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 50]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 50], ["created_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00], ["description", "What makes Skin Sin so wicked? It might be moisturizing almond oil and Fair Trade cocoa butter that whips your skin into soft submission. Or it could be Skin Sin’s enticingly seductive scent of juicy, ripe cherries just waiting to be bitten. Frankly, we can’t decide and don’t need to; we’ll submit to using this gorgeous hand and body lotion every day! Fall under Skin Sin’s spell for soft, smooth skin that smells of fresh cherries."], ["image_url", "http://demandware.edgesuite.net/sits_pod18/dw/image/v2/AAHL_PRD/on/demandware.static/Sites-Lush-Site/Sites-lushcosmetics-export/en_US/v1394236818157/images/product/9999902408.jpg?sw=300"], ["link", "http://www.lushusa.com/Skin-Sin/9999902408,en_US,pd.html"], ["merchant_id", 37], ["price", 29.95], ["title", "Skin Sin"], ["updated_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00]]
+  [1m[36m (11.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.9ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Etsy' LIMIT 1
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Accessories' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.5ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 38]]
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Etsy' AND "merchants"."id" != 38) LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 59]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 59], ["created_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00], ["description", "Minnie Mouse Bow Hair Pin"], ["image_url", "https://img1.etsystatic.com/022/0/5568154/il_570xN.475969899_d2xb.jpg"], ["link", "https://www.etsy.com/listing/96989384/minnie-mouse-bow-hair-pin"], ["merchant_id", 38], ["price", 9.0], ["title", "Minnie Mouse Bow Hair Pin"], ["updated_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00]]
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.8ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Etsy' LIMIT 1
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Accessories' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.5ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 38]]
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Etsy' AND "merchants"."id" != 38) LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 59]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 59], ["created_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00], ["description", "This is a new item, large zippered tote bag which made out of quality tweed and sturdy canvas cotton material. Used genuine leather for base of handles on the main bag."], ["image_url", "https://img1.etsystatic.com/011/0/5281847/il_570xN.459323829_eg8g.jpg"], ["link", "https://www.etsy.com/listing/159304829/tweed-and-canvas-large-tote-bag-zippered?ref=shop_home_feat_1"], ["merchant_id", 38], ["price", 108.9], ["title", "Tweed and canvas large tote bag, Zippered, Herringbone in burgundy"], ["updated_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00]]
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (1.0ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Etsy' LIMIT 1
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Jewelry' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.6ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 38]]
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Etsy' AND "merchants"."id" != 38) LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 51]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 51], ["created_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00], ["description", "This adorable octopus image locket is bright red and surrounded by blue and light turquoise sea. He/she is spraying ink in the form of gold hearts into the water. You can even see two little fish hanging out! The locket measures about 1 1/4in in diameter and boasts a water-resistant coating. The chain is a 28in gold plated link. Lobster clasp."], ["image_url", "https://img0.etsystatic.com/000/0/5636223/il_570xN.195234482.jpg"], ["link", "https://www.etsy.com/listing/62522905/octopus-locket-large-necklace-long-gold?ref=favs_view_12"], ["merchant_id", 38], ["price", 33.0], ["title", "Octopus Locket Large Necklace"], ["updated_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00]]
+  [1m[36m (3.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.7ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'ThinkGeek' LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Books' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.7ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 39]]
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'ThinkGeek' AND "merchants"."id" != 39) LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 48]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 48], ["created_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00], ["description", "From Direwolf Ale to Auroch Stew!"], ["image_url", "http://a.tgcdn.net/images/products/frontsquare/ed95_unofficial_game_of_thrones_cookbook.jpg"], ["link", "http://www.thinkgeek.com/product/ed95/"], ["merchant_id", 39], ["price", 21.99], ["title", "The Unofficial Game of Thrones Cookbook"], ["updated_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.8ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'ThinkGeek' LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Clothing' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 39]]
+  [1m[35mMerchant Exists (0.5ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'ThinkGeek' AND "merchants"."id" != 39) LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 49]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 49], ["created_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00], ["description", "Stylish clip-on tie with 8-bit pixelated design"], ["image_url", "http://a.tgcdn.net/images/products/frontsquare/9352_8_bit_tie.jpg"], ["link", "http://www.thinkgeek.com/product/9352/"], ["merchant_id", 39], ["price", 19.99], ["title", "The ThinkGeek 8-bit Tie"], ["updated_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00]]
+  [1m[36m (8.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.4ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'ThinkGeek' LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Clothing' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.3ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 39]]
+  [1m[35mMerchant Exists (0.5ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'ThinkGeek' AND "merchants"."id" != 39) LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 49]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 49], ["created_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00], ["description", "No, no, not a cardigan FOR an octopus. This one only has two arms, so it's for a human. Of course, if you knew a cold octopus, this could warm two of its limbs."], ["image_url", "http://a.tgcdn.net/images/products/frontsquare/f14d_octopus_cardigan.jpg"], ["link", "http://www.thinkgeek.com/product/f14d/"], ["merchant_id", 39], ["price", 49.99], ["title", "Octopus Cardigan"], ["updated_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00]]
+  [1m[36m (7.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.4ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'ThinkGeek' LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Toys' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.3ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 39]]
+  [1m[35mMerchant Exists (0.6ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'ThinkGeek' AND "merchants"."id" != 39) LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 55]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 55], ["created_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00], ["description", "Khal and Khaleesi vinyl figures from Funko's Pop! line"], ["image_url", "http://a.tgcdn.net/images/products/frontsquare/1936_khal_khaleesi_wedding_vinyl.jpg"], ["link", "http://www.thinkgeek.com/product/1936/"], ["merchant_id", 39], ["price", 19.99], ["title", "Game of Thrones Vinyl Figures Khal Drogo and Dany Wedding Set"], ["updated_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00]]
+  [1m[36m (10.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mMerchant Load (0.6ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."name" = 'Woot' LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Accessories' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = $1 ORDER BY "merchants"."id" ASC LIMIT 1[0m  [["id", 40]]
+  [1m[35mMerchant Exists (0.7ms)[0m  SELECT 1 AS one FROM "merchants" WHERE ("merchants"."name" = 'Woot' AND "merchants"."id" != 40) LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 59]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("category_id", "created_at", "description", "image_url", "link", "merchant_id", "price", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["category_id", 59], ["created_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00], ["description", ""], ["image_url", "http://d3gqasl9vmjfd8.cloudfront.net/fe490928-e646-4ff8-8a4d-c42c6eefccef.png"], ["link", "http://shirt.woot.com/offers/so-games-much-thrones-wow-tote"], ["merchant_id", 40], ["price", 12.0], ["title", "So Games Much Thrones Wow Tote"], ["updated_at", Sat, 15 Mar 2014 05:07:33 UTC +00:00]]
+  [1m[36m (9.0ms)[0m  [1mCOMMIT[0m
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-15 00:10:53 -0500
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mMerchant Load (23.5ms)[0m  SELECT "merchants".* FROM "merchants"
+  [1m[36mCategory Load (13.8ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "items" LIMIT 12) subquery_for_count
+  [1m[36mItem Load (1.6ms)[0m  [1mSELECT "items".* FROM "items" ORDER BY created_at desc LIMIT 12[0m
+  [1m[35mCategory Load (5.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 59]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 55]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 49]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 49]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 48]]
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 51]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 59]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 59]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 50]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 50]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 50]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 48]]
+  Rendered items/_display.html.erb (77.9ms)
+  Rendered pages/home.html.erb within layouts/application (154.6ms)
+Completed 200 OK in 239ms (Views: 114.1ms | ActiveRecord: 62.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-15 00:10:54 -0500
+
+
+Started GET "/items/new" for 127.0.0.1 at 2014-03-15 00:11:12 -0500
+Processing by ItemsController#new as HTML
+  Rendered items/_amazon_form.html.erb (1.4ms)
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants"[0m
+  Rendered items/_form.html.erb (19.2ms)
+  Rendered items/new.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-15 00:11:12 -0500
+
+
+Started POST "/items/amazon" for 127.0.0.1 at 2014-03-15 00:11:23 -0500
+Processing by ItemsController#create_from_amazon as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pSFVNNd85ezu0tYWevkIu+CMNdG92wUjQ+MA2VIkh2M=", "amazon_url"=>"http://www.amazon.com/Cuisinart-PSC-650-Stainless-2-Quart-Programmable/dp/B000VA48PM/ref=pd_sbs_k_6?ie=UTF8&refRID=1D96DSWJXJPGDXD52VC2", "commit"=>"Add item"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant ItemsController::AWS_KEY):
+  app/controllers/items_controller.rb:31:in `create_from_amazon'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-15 00:23:01 -0500
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mMerchant Load (0.6ms)[0m  [1mSELECT "merchants".* FROM "merchants"[0m
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "items" LIMIT 12) subquery_for_count[0m
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items" ORDER BY created_at desc LIMIT 12
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 59]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 55]]
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 49]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 49]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 48]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 51]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 59]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 59]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 50]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 50]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 50]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 48]]
+  Rendered items/_display.html.erb (26.6ms)
+  Rendered pages/home.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 45ms (Views: 37.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-15 00:23:01 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-15 10:24:57 -0500
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mMerchant Load (0.4ms)[0m  SELECT "merchants".* FROM "merchants"
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "items" LIMIT 12) subquery_for_count
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT "items".* FROM "items" ORDER BY created_at desc LIMIT 12[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 59]]
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 55]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 49]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 49]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 48]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 51]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 59]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 59]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 50]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 50]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 50]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 48]]
+  Rendered items/_display.html.erb (28.5ms)
+  Rendered pages/home.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 43ms (Views: 36.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-15 10:24:57 -0500
+
+
+Started GET "/categories/53" for 127.0.0.1 at 2014-03-15 10:28:03 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[35m (0.5ms)[0m  SELECT "memberships"."wishlist_id" FROM "memberships" WHERE "memberships"."user_id" = 3 AND "memberships"."contributor" = 't'
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 53 LIMIT 1[0m
+  [1m[35mItem Exists (0.6ms)[0m  SELECT 1 AS one FROM "items" WHERE "items"."category_id" = $1 LIMIT 1  [["category_id", 53]]
+  Rendered items/_display.html.erb (10.2ms)
+  Rendered categories/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 43ms (Views: 16.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-15 10:28:04 -0500
+
+
+Started GET "/categories/53/edit" for 127.0.0.1 at 2014-03-15 10:28:06 -0500
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mCategory Load (0.9ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 53 LIMIT 1[0m
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template categories/edit, application/edit with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/valerie/Documents/WishlistApp/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__2306819483907591347__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3404660132803696545__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/categories/53/edit" for 127.0.0.1 at 2014-03-15 10:28:58 -0500
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 53 LIMIT 1[0m
+Completed 500 Internal Server Error in 64ms
+
+ActionView::MissingTemplate (Missing template categories/edit, application/edit with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/valerie/Documents/WishlistApp/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__1966048503545132493__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1804360667013864889__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.6ms)
+
+
+Started GET "/categories/53/edit" for 127.0.0.1 at 2014-03-15 10:29:01 -0500
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 53 LIMIT 1
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template categories/edit, application/edit with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/valerie/Documents/WishlistApp/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__1966048503545132493__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1804360667013864889__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-15 10:29:04 -0500
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mMerchant Load (0.7ms)[0m  SELECT "merchants".* FROM "merchants"
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "items" LIMIT 12) subquery_for_count
+  [1m[36mItem Load (1.8ms)[0m  [1mSELECT "items".* FROM "items" ORDER BY created_at desc LIMIT 12[0m
+  [1m[35mCategory Load (4.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 59]]
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 55]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 49]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 49]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 48]]
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 51]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 59]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 59]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 50]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 50]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 50]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 48]]
+  Rendered items/_display.html.erb (82.8ms)
+  Rendered pages/home.html.erb within layouts/application (106.9ms)
+Completed 200 OK in 171ms (Views: 100.3ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-15 10:29:04 -0500
+
+
+Started GET "/categories/53" for 127.0.0.1 at 2014-03-15 10:29:23 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[35m (0.5ms)[0m  SELECT "memberships"."wishlist_id" FROM "memberships" WHERE "memberships"."user_id" = 3 AND "memberships"."contributor" = 't'
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 53 LIMIT 1[0m
+  [1m[35mItem Exists (0.9ms)[0m  SELECT 1 AS one FROM "items" WHERE "items"."category_id" = $1 LIMIT 1  [["category_id", 53]]
+  Rendered items/_display.html.erb (8.4ms)
+  Rendered categories/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 39ms (Views: 12.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-15 10:29:23 -0500
+
+
+Started GET "/categories/53/edit" for 127.0.0.1 at 2014-03-15 10:29:25 -0500
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 53 LIMIT 1[0m
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template categories/edit, application/edit with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/valerie/Documents/WishlistApp/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__1966048503545132493__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1804360667013864889__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/categories/53/edit" for 127.0.0.1 at 2014-03-15 10:31:19 -0500
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 53 LIMIT 1[0m
+Completed 500 Internal Server Error in 64ms
+
+ActionView::MissingTemplate (Missing template categories/edit, application/edit with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/valerie/Documents/WishlistApp/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__1222724752760518550__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__4325140070496363631__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-15 10:31:25 -0500
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mMerchant Load (0.9ms)[0m  [1mSELECT "merchants".* FROM "merchants"[0m
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "items" LIMIT 12) subquery_for_count[0m
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" ORDER BY created_at desc LIMIT 12
+  [1m[36mCategory Load (3.9ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 59]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 55]]
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 49]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 49]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 48]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 51]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 59]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 59]]
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 50]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 50]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1[0m  [["id", 50]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 ORDER BY "categories"."id" ASC LIMIT 1  [["id", 48]]
+  Rendered items/_display.html.erb (67.3ms)
+  Rendered pages/home.html.erb within layouts/application (93.4ms)
+Completed 200 OK in 135ms (Views: 87.5ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-15 10:31:25 -0500
+
+
+Started GET "/categories/52" for 127.0.0.1 at 2014-03-15 10:31:28 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36m (0.5ms)[0m  [1mSELECT "memberships"."wishlist_id" FROM "memberships" WHERE "memberships"."user_id" = 3 AND "memberships"."contributor" = 't'[0m
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 52 LIMIT 1
+  [1m[36mItem Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "items" WHERE "items"."category_id" = $1 LIMIT 1[0m  [["category_id", 52]]
+  Rendered items/_display.html.erb (7.8ms)
+  Rendered categories/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 41ms (Views: 12.5ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-15 10:31:28 -0500
+
+
+Started GET "/categories/52/edit" for 127.0.0.1 at 2014-03-15 10:31:30 -0500
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"52"}
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 52 LIMIT 1
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template categories/edit, application/edit with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/valerie/Documents/WishlistApp/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__1222724752760518550__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__4325140070496363631__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/categories/52/edit" for 127.0.0.1 at 2014-03-15 10:33:31 -0500
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 52 LIMIT 1[0m
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template categories/edit, application/edit with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/valerie/Documents/WishlistApp/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__1222724752760518550__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__4325140070496363631__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/categories/52/edit" for 127.0.0.1 at 2014-03-15 10:33:45 -0500
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mCategory Load (1.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 52 LIMIT 1[0m
+Completed 500 Internal Server Error in 68ms
+
+ActionView::MissingTemplate (Missing template categories/edit, application/edit with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/valerie/Documents/WishlistApp/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__3418656146715988683__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2814353856562128256__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/valerie/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.5ms)

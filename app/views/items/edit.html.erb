@@ -1,0 +1,30 @@
+<% if session[:user_id] %>
+	<div class='form-horizontal'>
+		<%= form_tag item_path(@item.id), :method=>'patch' do %>
+			<%= label_tag :title %>
+			<%= text_field_tag :title, @item.title, :class=>'form-control' %>
+			<br>
+			<%= label_tag :price %>
+			<%= text_field_tag :price, @item.price, :class=>'form-control' %>
+			<br>
+			<%= label_tag :category %>
+			<%= collection_select :item, :category_id, Category.all, :id, :name, {}, {class:'dropdown-toggle form-control'} %>
+			<br>
+			<%= label_tag :merchant %>
+			<%= collection_select :item, :merchant_id, Merchant.all, :id, :name, {}, {class:'dropdown-toggle form-control'} %>
+			<br>
+			<%= label_tag :link %>
+			<%= text_field_tag :link, @item.link, :class=>'form-control' %>
+			<br>
+			<%= label_tag :image_url %>
+			<%= text_field_tag :image_url, @item.image_url, :class=>'form-control' %>
+			<br>
+			<%= label_tag :description %>
+			<%= text_area_tag :description, @item.description, :class=>'form-control' %>
+			<br>
+			<%= submit_tag 'Edit item', :class=>'btn btn-primary' %>
+		<% end %>
+	</div>
+<% else %>
+	<p>Please <%= link_to 'log in', new_session_url %> or <%= link_to 'sign up', new_user_url %> to access this form</p>
+<% end %>

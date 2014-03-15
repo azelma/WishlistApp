@@ -1,0 +1,8 @@
+<legend>Add comment</legend>
+<%= form_tag wishlist_comments_path(@wishlist.id) do %>
+	<%= label_tag :text %>
+	<%= text_area_tag :content, nil, :class=>'form-control' %>
+	<%= hidden_field_tag(:user_id, session['user_id']) %>
+	<br>
+	<%= submit_tag "Add comment", :class=>'btn btn-primary' %>
+<% end %>

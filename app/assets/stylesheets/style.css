@@ -1,0 +1,33 @@
+li.inline {
+	list-style-type: none;
+	display: inline;
+	font-size: 1.5em;
+}
+
+input.link{
+	background: none;
+	border: 0;
+	padding: 2;
+	color: #000;
+}
+.form-horizontal{
+	width: 50%;
+}
+.signup{
+	width: 25%;
+}
+.buttons{
+	margin: 2px; 
+}
+.white-cell{
+	background-color: #fff;
+}
+.white-cell h3 a, .white-cell h5 a{
+	color: #ad1d28;
+}
+.white-cell h3, .white-cell h4, .white-cell p, .white-cell h5{
+	color: #444444;
+}
+.button-area {
+	text-align: center;
+}

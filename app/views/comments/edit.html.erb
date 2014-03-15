@@ -1,0 +1,8 @@
+<legend>Edit comment</legend>
+<%= form_tag wishlist_comment_path(@wishlist.id, @comment.id), :method => 'patch' do %>
+	<%= label_tag :text %>
+	<%= text_area_tag :content, @comment.content, :class=>'form-control' %>
+	<%= hidden_field_tag(:user_id, @comment.user_id) %>
+	<br>
+	<%= submit_tag "Edit comment", :class=>'btn btn-primary' %>
+<% end %>

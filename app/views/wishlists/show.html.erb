@@ -1,0 +1,39 @@
+<h2><%= @wishlist.name %></h2>
+<% if @is_contributor %>
+	<%= button_to 'Delete', wishlist_path(@wishlist.id), method: 'delete', class: 'pull-right btn btn-danger buttons' %>
+	<%= link_to 'Edit', edit_wishlist_path(@wishlist.id), class: 'pull-right btn btn-warning buttons'%>
+<% end %>
+<%= link_to 'View wishlist members', wishlist_memberships_path(@wishlist.id), class: 'pull-right btn btn-info buttons'%>
+<p><%= @wishlist.description %></p>
+<h3>Items</h3>
+<% @type = 'wishlist' %>
+<%= render 'items/display' %>
+<% if @is_contributor == false %>
+	<h3>Comments</h3>
+		<% if @wishlist.comments.empty? %>
+			<div class='panel panel-default'>
+				<div class='panel-body'>
+		    		No comments
+		  		</div>
+		  	</div>
+		<% else %>
+			<% @wishlist.comments.each do |comment| %>
+				<div class='panel panel-default'>
+					<div class='panel-heading'>
+						<% time_posted = comment.created_at.in_time_zone('Central Time (US & Canada)') %>
+						On <%= time_posted.strftime('%B %-d, %Y') %> at <%= time_posted.strftime('%-I:%M%P') %> <strong><%= comment.user.name %></strong> said
+					</div>
+		  			<div class='panel-body'>
+		  				<p>
+			    			<%= comment.content %>
+			    		</p>
+			    		<% if comment.user.id == @user.id %>
+			    			<%= button_to 'Delete', wishlist_comment_path(@wishlist.id, comment.id), method: 'delete', class: 'pull-right btn btn-danger buttons' %>
+							<%= link_to 'Edit', edit_wishlist_comment_path(@wishlist.id, comment.id), class: 'pull-right btn btn-warning buttons'%>
+			    		<% end %>
+		  			</div>
+	  			</div>
+	  		<% end %>
+		<% end %>
+	<%= render 'comments/form' %>
+<% end %>

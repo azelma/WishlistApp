@@ -1,0 +1,16 @@
+<h2><%= @merchant.name %></h2>
+<% if session[:user_id] %>
+	<%= button_to 'Delete', merchant_path(@merchant.id), method: 'delete', data: {confirm: 'This action deletes the merchant and all its items and cannot be undone. Are you sure?'}, class: 'pull-right btn btn-large btn-danger buttons' %>
+	<%= link_to 'Edit', edit_merchant_path(@merchant.id), class: 'pull-right btn btn-warning buttons'%>
+<% end %>
+<p>
+	<% if @merchant.site.present? %>
+		<%= link_to 'Visit site', @merchant.site,  class: 'pull-right btn btn-info buttons' %>
+	<% end %>
+	<% if session[:user_id] %>
+		<%= link_to 'Add item', new_item_path,  class: 'pull-right btn btn-info buttons' %>
+	<% end %>
+</p>
+<h3>Items</h3>
+<% @type = 'main' %>
+<%= render 'items/display' %>

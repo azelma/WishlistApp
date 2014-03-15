@@ -1,0 +1,16 @@
+<% if session[:user_id] %>
+	<div class="form-horizontal">
+		<legend>Create a new wishlist</legend>
+		<%= form_tag wishlists_url do %>
+			<%= label_tag :name %>
+			<%= text_field_tag :name, nil, :class=>'form-control'  %>
+			<br>
+			<%= label_tag :description %>
+			<%= text_area_tag :description, nil, :class=>'form-control' %>
+			<br>
+			<%= submit_tag "Create list", :class=>'btn btn-primary' %>
+		<% end %>
+	</div>
+<% else %>
+	<p>Please <%= link_to 'log in', new_session_url %> or <%= link_to 'sign up', new_user_url %> to access this form</p>
+<% end %>

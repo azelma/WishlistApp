@@ -1,0 +1,7 @@
+<% if session[:user_id] %>
+	<%= render 'amazon_form' %>
+	<h5>or</h5>
+	<%= render 'form' %>
+<% else %>
+	<p>Please <%= link_to 'log in', new_session_url %> or <%= link_to 'sign up', new_user_url %> to access this form</p>
+<% end %>

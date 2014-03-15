@@ -1,0 +1,17 @@
+<div class="form-horizontal">
+	<legend>Add commenters/contributors</legend>
+	<%= form_tag wishlist_memberships_url do %>
+		<%= label_tag :user %>
+		<%= collection_select :wishlist, :user, User.all, :id, :name, {}, {class:'dropdown-toggle form-control'} %>
+		<br>
+		<%= radio_button_tag(:contributor, false) %>
+		<%= label_tag(:contributor_false, "Commenter") %>
+		<br>
+		<% if @contributor %>
+			<%= radio_button_tag(:contributor, true) %>
+			<%= label_tag(:contributor_true, "Contributor") %>
+		<% end %>
+		<br>
+		<%= submit_tag "Add member", :class=>'btn btn-primary' %>
+	<% end %>
+</div>
