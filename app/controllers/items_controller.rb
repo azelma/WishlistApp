@@ -27,7 +27,7 @@ class ItemsController < ApplicationController
 		req = Vacuum.new
 		params = {
   			'IdType' => 'ASIN',
-  			'ResponseGroup' => 'OfferSummary,Images,ItemAttributes,EditorialReview',
+  			'ResponseGroup' => 'Offers,Images,ItemAttributes,EditorialReview',
   			'ItemId' => amazon_id,
 		}
 		req.configure(
@@ -59,9 +59,11 @@ class ItemsController < ApplicationController
 			if amazon_hash['ItemLookupResponse']['Items']['Item']['LargeImage'].present?
 				i.image_url = amazon_hash['ItemLookupResponse']['Items']['Item']['LargeImage']['URL']
 			end
-			if amazon_hash['ItemLookupResponse']['Items']['Item']['OfferSummary'].present? and amazon_hash['ItemLookupResponse']['Items']['Item']['OfferSummary']['LowestNewPrice'].present?
-				price_in_cents = amazon_hash['ItemLookupResponse']['Items']['Item']['OfferSummary']['LowestNewPrice']['Amount']
-				i.price = price_in_cents.to_f/100
+			if amazon_hash['ItemLookupResponse']['Items']['Item']['Offers'].present? and amazon_hash['ItemLookupResponse']['Items']['Item']['Offers']['TotalOffers'] != "0"
+				if amazon_hash['ItemLookupResponse']['Items']['Item']['Offers']['TotalOffers'] == "1"
+					price_in_cents = amazon_hash['ItemLookupResponse']['Items']['Item']['Offers']['Offer']['OfferListing']['Price']['Amount']
+					i.price = price_in_cents.to_f/100
+				end
 			end
 			reviews = amazon_hash['ItemLookupResponse']['Items']['Item']['EditorialReviews']
 			if reviews.nil?
