@@ -12,7 +12,12 @@ class CategoriesController < ApplicationController
 		@wishlists = Wishlist.where(:id => wishlist_ids)
 		category_id = params[:id]
 		@category = Category.find_by(:id => category_id)
-		@items = @category.items
+		if @category.present?
+			@items = @category.items
+		else
+			flash[:alert] = "Can't find that category"
+			redirect_to root_url
+		end
 	end
 
 	def edit

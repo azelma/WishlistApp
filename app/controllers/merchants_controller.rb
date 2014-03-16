@@ -14,8 +14,13 @@ class MerchantsController < ApplicationController
 		this_user_id = session[:user_id]
 		wishlist_ids = Membership.where(:user_id => this_user_id).where(:contributor=>true).pluck(:wishlist_id)
 		@merchant = Merchant.find_by :id => merchant_id
-		@items = @merchant.items
-		@wishlists = Wishlist.where(:id => wishlist_ids)
+		if @merchant.present?
+			@items = @merchant.items
+			@wishlists = Wishlist.where(:id => wishlist_ids)
+		else
+			flash[:alert] = "Can't find that merchant"
+			redirect_to root_url
+		end
 	end
 
 	def create
