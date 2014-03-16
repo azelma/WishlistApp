@@ -2,15 +2,6 @@ class WishlistsController < ApplicationController
 	before_action :authorized_users 
 	skip_before_action :authorized_users, only: [:new, :create, :index, :show]
 
-	def index
-		this_user_id = session[:user_id]
-		membership_info = Membership.where(:user_id => this_user_id)
-		contributor_lists = membership_info.where(:contributor=>true).pluck(:wishlist_id)
-		commenter_lists = membership_info.where(:contributor=>false).pluck(:wishlist_id)
-		@contributing_lists = Wishlist.where(:id => contributor_lists)
-		@commenting_lists = Wishlist.where(:id => commenter_lists)
-	end
-
 	def new
 	end
 
@@ -27,7 +18,7 @@ class WishlistsController < ApplicationController
 			@user = User.find_by(:id => this_user_id)
 		else
 			flash[:alert] = "You don't have permission to view that list"
-			redirect_to wishlists_url
+			redirect_to "/"
 		end
 	end
 
@@ -41,7 +32,7 @@ class WishlistsController < ApplicationController
 			m.wishlist_id = w.id
 			m.contributor = true
 			if m.save
-				redirect_to wishlists_url
+				redirect_to "/"
 			else
 				w.destroy
 				flash[:warning] = ''
@@ -84,7 +75,7 @@ class WishlistsController < ApplicationController
 		this_wishlist_id = params[:id]
 		w = Wishlist.find_by(:id => this_wishlist_id)
     	w.destroy
-	  	redirect_to wishlists_url
+	  	redirect_to "/"
 	end
 
 	def additem
@@ -98,7 +89,7 @@ class WishlistsController < ApplicationController
 		else
 			flash[:warning] = 'There was an error adding that item'
 			if w.nil?
-				redirect_to wishlists_url
+				redirect_to "/"
 			else
 				redirect_to wishlist_path(this_wishlist_id)
 			end
@@ -124,7 +115,7 @@ class WishlistsController < ApplicationController
 		authorized_users = Membership.where(:wishlist_id => this_wishlist_id).where(:contributor=>true).pluck(:user_id)
 		unless authorized_users.include?(session[:user_id])
 			flash[:alert] = "You don't have permission to do that"
-			redirect_to wishlists_url
+			redirect_to "/"
 		end
 	end
 end

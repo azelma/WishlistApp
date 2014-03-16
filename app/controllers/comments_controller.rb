@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
 			if Wishlist.find_by(:id => this_wishlist_id).present?
 				redirect_to wishlist_path(this_wishlist_id)
 			else
-				redirect_to wishlists_url
+				redirect_to "/"
 			end
 		end
 	end
@@ -38,7 +38,7 @@ class CommentsController < ApplicationController
 			if Wishlist.find_by(:id => this_wishlist_id).present?
 				redirect_to wishlist_path(this_wishlist_id)
 			else
-				redirect_to wishlists_url
+				redirect_to "/"
 			end
 		end
 	end
@@ -56,7 +56,7 @@ class CommentsController < ApplicationController
 		comment = Comment.find_by(:id => this_comment_id)
 		unless comment.user_id == session[:user_id]
 			flash[:alert] = "You don't have permission to do that"
-			redirect_to wishlists_url
+			redirect_to "/"
 		end
 	end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140316061711) do
+ActiveRecord::Schema.define(version: 20141117071823) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,28 +36,16 @@ ActiveRecord::Schema.define(version: 20140316061711) do
     t.float    "price"
     t.string   "link"
     t.string   "image_url"
-    t.integer  "merchant_id"
     t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "items_wishlists", id: false, force: true do |t|
-    t.integer "item_id"
-    t.integer "wishlist_id"
+    t.integer  "wishlist_id"
   end
 
   create_table "memberships", force: true do |t|
     t.integer "user_id"
     t.integer "wishlist_id"
     t.boolean "contributor"
-  end
-
-  create_table "merchants", force: true do |t|
-    t.string   "name"
-    t.string   "site"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|

@@ -1,28 +1,22 @@
-<% if @user.nil? %>
+<% if @current_user.nil? %>
 	<h1>Welcome to the Wishlists App!</h1>
 <% else %>
-	<h1><%= "Welcome to the Wishlists App, #{@user.name}!" %></h1>
-<% end %>
-<% if session[:user_id] %>
-	<%= link_to "Add item", new_item_path,  class: 'pull-right btn btn-info buttons' %>
-	<%= link_to "Add merchant", new_merchant_url, class: 'pull-right btn btn-large btn-info buttons' %>
-<% end %>
-<h3>Stores (<%= link_to 'Browse', merchants_url %>)</h3>
-<ul>
-	<% @merchants.each do |merchant| %>
-		<li class="inline">
-			<%= link_to merchant.name, merchant_path(merchant.id), class: 'btn btn-large btn-primary buttons'%>
-		</li>
+	<h1><%= "Welcome to the Wishlists App, #{@current_user.name}!" %></h1>
+	<h3>Wishlists</h3>
+	<% if @current_user.contributing_lists.empty? %>
+		<p>None.</p>
+	<% else %>
+		<% @current_user.contributing_lists.each do |wishlist| %>
+			<h4><%= link_to wishlist.name, wishlist_path(wishlist.id) %></h4>
+		<% end %>
 	<% end %>
-</ul>
-<h3>Categories (<%= link_to 'Browse', categories_url %>)</h3>
-<ul>
-	<% @categories.each do |category| %>
-		<li class="inline">
-			<%= link_to category.name, category_path(category.id), class: 'btn btn-large btn-default buttons'%>
-		</li>
+	<h3>Lists Shared with Me</h3>
+	<% if @current_user.commenting_lists.empty? %>
+		<p>None.</p>
+	<% else %>
+		<% @current_user.commenting_lists.each do |wishlist| %>
+			<h4><%= link_to wishlist.name, wishlist_path(wishlist.id) %></h4>
+		<% end %>
 	<% end %>
-</ul>
-<h3>Recent Items</h3>
-<% @type = 'main' %>
-<%= render 'items/display' %>
+
+<% end %>

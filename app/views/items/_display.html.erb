@@ -11,7 +11,7 @@
 						<% if item.image_url.present? %>
 					  		<%= image_tag item.image_url, :class=>'img-responsive' %>
 					  	<% end %>
-					  	<% if session[:user_id] %>
+					  	<% if session[:user_id] && @is_contributor %>
 						  	<br>
 								<%= button_to 'Delete item', item_path(item.id), method: 'delete', class: 'pull-right btn btn-sm btn-danger buttons' %>
 								<%= link_to 'Edit item', edit_item_path(item.id), class: 'pull-right btn btn-sm btn-warning buttons'%>
@@ -27,41 +27,9 @@
 								<h4>$<%= "#{format("%.2f", item.price)}" %></h4>
 							<% end %>
 							<h5>Category: <%= link_to item.category.name, category_path(item.category.id) %></h5>
-							<% if item.link.present? %>
-								<div class='fb-like' data-href=<%= item.link %> data-layout='button_count' data-action='like' data-show-faces='false' data-share='false'></div>
-							<% end %>
 							<% if item.description.present? %>
 								<p><%= item.description %></p>
 							<% end %>
-					    	<p>
-					    		<% if @type == 'main' and @wishlists.present? %>
-						    		<div class='btn-group'>
-						  				<button type='button' class='btn btn-success  dropdown-toggle' data-toggle='dropdown'>
-							    				Add to Wishlist
-						    				<span class='caret'></span>
-						  				</button>
-						  				<ul class='dropdown-menu'>
-						  					<% @wishlists.each do |wishlist| %>
-						  						<%= form_tag '/additem', :method=> 'patch' do %>
-						  							<%= hidden_field_tag(:wishlist_id, wishlist.id) %>
-						  							<%= hidden_field_tag(:item_id, item.id) %>
-						   							<li><%= submit_tag wishlist.name, class: 'link' %></li>
-												<% end %>
-						   		 			<% end %>
-						  				</ul>
-									</div>
-								<% else %>
-									<% if @is_contributor %>
-				        				<div class='btn-group'>
-				        					<%= form_tag '/removeitem', :method=>'patch' do %>
-					  							<%= hidden_field_tag(:wishlist_id, @wishlist.id) %>
-					  							<%= hidden_field_tag(:item_id, item.id) %>
-					   		 					<%= submit_tag 'Remove from wishlist', class: 'btn btn-danger' %>
-					   		 				<% end %>
-					   		 			</div>
-					   		 		<% end %>
-								<% end %>
-					 		</p>
 				   		</div>
 				   	</div>
 				</div>

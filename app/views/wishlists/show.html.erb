@@ -1,9 +1,9 @@
 <h2><%= @wishlist.name %></h2>
-<% if @is_contributor %>
-	<%= button_to 'Delete', wishlist_path(@wishlist.id), method: 'delete', class: 'pull-right btn btn-danger buttons' %>
-	<%= link_to 'Edit', edit_wishlist_path(@wishlist.id), class: 'pull-right btn btn-warning buttons'%>
-<% end %>
 <%= link_to 'View wishlist members', wishlist_memberships_path(@wishlist.id), class: 'pull-right btn btn-info buttons'%>
+<% if @is_contributor %>
+	<%= link_to 'Edit', edit_wishlist_path(@wishlist.id), class: 'pull-right btn btn-warning buttons'%>
+	<%= link_to 'Add items', new_item_path(:wishlist_id => @wishlist.id), class: 'pull-right btn btn-primary buttons'%>
+<% end %>
 <p><%= @wishlist.description %></p>
 <h3>Items</h3>
 <% @type = 'wishlist' %>

@@ -1,5 +1,7 @@
 class ItemsController < ApplicationController
 	def new
+		this_user_id = session[:user_id]
+		@current_user = User.find(this_user_id)
 	end
 
 	def show
@@ -10,6 +12,7 @@ class ItemsController < ApplicationController
 	def create_from_amazon
 		i = Item.new
 		amazon_url = params[:amazon_url]
+		wishlist_id = params[:item][:wishlist_id]
 		# All of the different possible Amazon url formats, 
 		# thanks to http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number
 		if /\/dp\/[A-Za-z0-9]{10}/.match(amazon_url).present?
@@ -42,8 +45,6 @@ class ItemsController < ApplicationController
 			return
 		end
 		amazon_hash = req.item_lookup(params).to_h
-		m = Merchant.find_by(:name => 'Amazon')
-		i.merchant_id = m.id
 		if amazon_hash['ItemLookupResponse']['Items']['Request']['Errors'].present?
 			flash[:warning] = 'There was a problem with the lookup. Check the ID and try again.'
 			redirect_to new_item_url
@@ -84,10 +85,11 @@ class ItemsController < ApplicationController
 				description = description[0,489] + '...'
 			end
 			i.description = description
+			i.wishlist_id = wishlist_id
 		end
 		if i.save
 			flash[:notice] = 'Item added'
-			redirect_to merchant_path(i.merchant_id)
+			redirect_to wishlist_path(wishlist_id)
 		else
 			flash[:warning] = ''
       		for error in i.errors.full_messages
@@ -104,11 +106,10 @@ class ItemsController < ApplicationController
 		i.price = params[:price]
 		i.description = params[:description]
 		i.image_url = params[:image_url]
-		merchant_id = params[:item][:merchant_id]
 		i.category_id = params[:item][:category_id]
-		i.merchant_id = merchant_id
+		i.wishlist_id = params[:item][:wishlist_id]
 		if i.save
-			redirect_to merchant_path(merchant_id)
+			redirect_to wishlist_path(params[:item][:wishlist_id])
 		else
 			flash[:warning] = ''
       		for error in i.errors.full_messages
@@ -121,13 +122,13 @@ class ItemsController < ApplicationController
 	def edit
 		item_id = params[:id]
 		@item = Item.find_by(:id => item_id)
+		@current_user = User.find(session[:user_id])
 	end
 
 	def update
 		item_id = params[:id]
-		merchant_id = params[:item][:merchant_id]
 		i = Item.find_by(:id => item_id)
-		i.merchant_id = merchant_id
+		i.wishlist_id = params[:item][:wishlist_id]
 		i.category_id = params[:item][:category_id]
 		i.title = params[:title]
 		i.link = params[:link]
@@ -135,7 +136,7 @@ class ItemsController < ApplicationController
 		i.description = params[:description]
 		i.image_url = params[:image_url]
 		if i.save
-			redirect_to merchant_path(merchant_id)
+			redirect_to wishlist_path(params[:item][:wishlist_id])
 		else
 			flash[:warning] = ''
       		for error in i.errors.full_messages
@@ -148,8 +149,8 @@ class ItemsController < ApplicationController
 	def destroy
 		item_id = params[:id]
 		i = Item.find_by(:id => item_id)
-		merchant_id = i.merchant_id
+		wishlist_id = i.wishlist_id
     	i.destroy
-	  	redirect_to merchant_path(merchant_id)
+	  	redirect_to wishlist_path(wishlist_id)
 	end
 end

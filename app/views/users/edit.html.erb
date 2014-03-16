@@ -1,0 +1,12 @@
+<div class="form-horizontal signup">
+    <legend>Change Password</legend>
+    <%= form_tag user_path(@user), :method=>'patch' do %>
+        <%= label_tag :password %>
+        <%= password_field_tag :password, nil, :class=>'form-control'  %>
+        <br>
+        <%= label_tag :password_confirmation %>
+        <%= password_field_tag :password_confirmation, nil, :class=>'form-control' %>
+        <br>
+        <%= submit_tag "Change", :class=>'btn btn-primary' %>
+    <% end %>
+</div>

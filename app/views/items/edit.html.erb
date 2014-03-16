@@ -1,4 +1,4 @@
-<% if session[:user_id] %>
+<% if @current_user %>
 	<div class='form-horizontal'>
 		<%= form_tag item_path(@item.id), :method=>'patch' do %>
 			<%= label_tag :title %>
@@ -10,8 +10,8 @@
 			<%= label_tag :category %>
 			<%= collection_select :item, :category_id, Category.all, :id, :name, {}, {class:'dropdown-toggle form-control'} %>
 			<br>
-			<%= label_tag :merchant %>
-			<%= collection_select :item, :merchant_id, Merchant.all, :id, :name, {}, {class:'dropdown-toggle form-control'} %>
+			<%= label_tag :wishlist %>
+			<%= collection_select :item, :wishlist_id, @current_user.contributing_lists, :id, :name, {}, {class:'dropdown-toggle form-control'} %>
 			<br>
 			<%= label_tag :link %>
 			<%= text_field_tag :link, @item.link, :class=>'form-control' %>

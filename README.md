@@ -8,6 +8,7 @@ Resources used:
 - Amazon products API (https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html)
 - Vacuum Ruby wrapper for Amazon products API (https://github.com/hakanensari/vacuum)
 - Facebook like button (https://developers.facebook.com/docs/plugins/like-button/)
+- http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number
 - http://neyric.com/2007/07/08/how-to-delete-a-many-to-many-association-with-rails/
 - Bootstrap reference pages (http://getbootstrap.com/)
 - http://stackoverflow.com/questions/1367409/how-to-make-button-look-like-a-link

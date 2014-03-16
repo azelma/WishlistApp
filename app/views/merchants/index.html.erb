@@ -1,7 +1,0 @@
-<h1>Merchants</h1>
-<% @merchants.each do |merchant| %>
-	<h3><%= link_to merchant.name, merchant_path(merchant.id) %></h3>
-	<% @items = merchant.items.limit(4) %>
-	<% @type = 'main' %>
-	<%= render 'items/display' %>
-<% end %>

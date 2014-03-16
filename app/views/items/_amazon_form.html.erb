@@ -3,6 +3,8 @@
 	<%= form_tag items_amazon_url do %>
 		<%= label_tag :amazon_url, 'By Amazon URL'%>
 		<%= text_field_tag :amazon_url, nil, :class=>'form-control' %>
+        <br>
+        <%= collection_select :item, :wishlist_id, @current_user.contributing_lists, :id, :name, {:selected => params[:wishlist_id]}, {class:'dropdown-toggle form-control'} %>
 		<br>
 		<%= submit_tag "Add item", :class=>'btn btn-primary' %>
 	<% end %>
