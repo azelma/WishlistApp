@@ -13,7 +13,7 @@
 					  	<% end %>
 					  	<% if session[:user_id] %>
 						  	<br>
-								<%= button_to 'Delete item', item_path(item.id), method: 'delete', class: 'pull-right btn btn-sm btn-danger buttons', data: {confirm: 'This will delete the item completely from the wishlist app. Are you sure?'}%>
+								<%= button_to 'Delete item', item_path(item.id), method: 'delete', class: 'pull-right btn btn-sm btn-danger buttons' %>
 								<%= link_to 'Edit item', edit_item_path(item.id), class: 'pull-right btn btn-sm btn-warning buttons'%>
 							<br>
 						<% end %>
