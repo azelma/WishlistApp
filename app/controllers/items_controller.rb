@@ -30,11 +30,17 @@ class ItemsController < ApplicationController
   			'ResponseGroup' => 'Offers,Images,ItemAttributes,EditorialReview',
   			'ItemId' => amazon_id,
 		}
-		req.configure(
-    		aws_access_key_id: AWS_KEY,
-    		aws_secret_access_key: AWS_SECRET,
-    		associate_tag: 'tag'
-		)
+		begin
+			req.configure(
+    			aws_access_key_id: AWS_KEY,
+    			aws_secret_access_key: AWS_SECRET,
+    			associate_tag: 'tag'
+			)
+		rescue
+			flash[:alert] = 'Looks like there was a problem with the Amazon API. The API kay has probably not been set.'
+			redirect_to new_item_url
+			return
+		end
 		amazon_hash = req.item_lookup(params).to_h
 		m = Merchant.find_by(:name => 'Amazon')
 		i.merchant_id = m.id
