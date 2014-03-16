@@ -8,6 +8,9 @@ class Category < ActiveRecord::Base
 		Item.where(:category_id => id).update_all(category_id: other_category.id)
 	end
 	def check_for_other
-		errors.add(:base, 'Cannot delete Other category') if name == 'Other'
+		if name == 'Other'
+			errors.add(:base, 'Cannot delete Other category')
+			return false
+		end
 	end
 end
