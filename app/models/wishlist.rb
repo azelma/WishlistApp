@@ -6,4 +6,5 @@ class Wishlist < ActiveRecord::Base
 	validates_associated :items
 	validates :name, presence: true
 	before_destroy { |record| Membership.destroy_all "wishlist_id = #{record.id}"   }
+	before_destroy { |record| Comment.destroy_all "wishlist_id = #{record.id}"   }
 end

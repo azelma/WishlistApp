@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+	before_action :authorized_user, only: [:edit, :update, :destroy]
 	def create
 		c = Comment.new
 		this_wishlist_id = params['wishlist_id']
@@ -48,5 +49,14 @@ class CommentsController < ApplicationController
 		c = Comment.find_by(:id => this_comment_id)
     	c.destroy
 	  	redirect_to wishlist_path(this_wishlist_id)
+	end
+	private
+	def authorized_user
+		this_comment_id = params[:id]
+		comment = Comment.find_by(:id => this_comment_id)
+		unless comment.user_id == session[:user_id]
+			flash[:alert] = "You don't have permission to do that"
+			redirect_to wishlists_url
+		end
 	end
 end
