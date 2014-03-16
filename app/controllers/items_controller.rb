@@ -37,7 +37,7 @@ class ItemsController < ApplicationController
     			associate_tag: 'tag'
 			)
 		rescue
-			flash[:alert] = 'Looks like there was a problem with the Amazon API. The API kay has probably not been set.'
+			flash[:alert] = 'Looks like there was a problem with the Amazon API. The API key has probably not been set.'
 			redirect_to new_item_url
 			return
 		end
