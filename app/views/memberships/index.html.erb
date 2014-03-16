@@ -5,12 +5,14 @@
 	<p>None.</p>
 <% else %>
 	<% @contributors.each do |contributor| %>
-		<p>
-			<%= contributor.name %>
+		<div>
 			<% if contributor.id != session[:user_id] and @is_contributor %>
-				<%= button_to "Delete", wishlist_membership_path(@wishlist.id, @contributor.id), method: 'delete', class: 'pull-right btn btn-danger buttons' %>
+				<div class='btn-group'>
+						<%= button_to "Delete", wishlist_membership_path(@wishlist.id, contributor.id), method: 'delete', class: 'pull-right btn btn-xs btn-danger buttons' %>
+				</div>
 			<% end %>
-		</p>
+			<%= contributor.name %>
+		</div>
 	<% end %>
 <% end %>
 <h3>Commenters</h3>
